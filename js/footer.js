@@ -8,11 +8,14 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-        CSS goes here
+        footer {
+          text-align: center;
+        }
       </style>
 
       <footer>
-        HTML goes here
+        Footer content for every page goes here.
+        <p>Website hand made by Fiona Wiggins</p>
       </footer>
     `;
   }

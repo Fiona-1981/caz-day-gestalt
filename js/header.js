@@ -8,11 +8,14 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-        CSS goes here
+        header {
+          text-align: center;
+        }
       </style>
 
       <header>
-        HTML goes here
+      <img src="../images/caz-logo-2.png" alt="Caz's logo">
+      <p>Caz Day Gestalt Therapy</p>
       </header>
     `;
   }
