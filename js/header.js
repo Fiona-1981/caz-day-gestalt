@@ -3,6 +3,8 @@ class Header extends HTMLElement {
     super();
   }
 
+  // Remember the CSS in here is overridden by the CSS in the Footer file!
+
   connectedCallback() {
     this.innerHTML = `
       <style>
