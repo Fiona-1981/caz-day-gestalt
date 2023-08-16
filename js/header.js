@@ -35,6 +35,7 @@ class Header extends HTMLElement {
       <ul class="menu">
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+        <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
       </ul>
       </header>
     `;
