@@ -43,7 +43,7 @@ class Footer extends HTMLElement {
           </div>
         </blockquote> 
         <script async src="//www.instagram.com/embed.js"></script>
-        <p>Website hand made by Fiona Wiggins</p>
+        <p><a href="mailto:hello@handmadebywiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
       </footer>
     `;
   }
