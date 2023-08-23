@@ -1,24 +1,22 @@
-class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-// Remember the CSS in here overrides the CSS in the Header file!
-
-  connectedCallback() {
-    this.innerHTML = `
-      <style>
-        footer {
-          text-align: center;
-        }
-      </style>
-
-      <footer>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Caz Day Gestalt Therapy</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='./css/style.css'>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>
         <blockquote>
           <div style="padding:16px;">
             <a href="https://www.instagram.com/caz_day_gestalt_therapy/?utm_source=ig_embed&amp;utm_campaign=loading" 
-              style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; 
-              width:100%;" target="_blank">
+            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; 
+            width:100%;" target="_blank">
               <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
                 <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" 
                 xmlns:xlink="https://www.w3.org/1999/xlink">
@@ -34,12 +32,30 @@ class Footer extends HTMLElement {
               </div>
             </a>
           </div>
-        </blockquote> 
-        <script async src="//www.instagram.com/embed.js"></script>
-        <p><a href="mailto:hello@handmadebywiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
-      </footer>
-    `;
-  }
-}
-
-customElements.define('footer-component', Footer);
+        </blockquote>
+        <a href="mailto:cdaygestalttherapy@gmail.com">email: cdaygestalttherapy@gmail.com</a>
+      </p>
+      <a class="no-hover" href="index.html">
+      <img src="../images/caz-logo-2.png" alt="Caz's logo">
+      <h2>Caz Day Gestalt Therapy</h2>
+      </a>
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="./pages/gallery.html">Gallery</a></li>
+        <li class="menu-item"><a href="./pages/testimonials.html">Testimonials</a></li>
+        <li class="menu-item"><a href="./pages/articles.html">Articles, Books and Blogs</a></li>
+        <li class="menu-item"><a href="./pages/appointments.html">Appointments, Fees, Location etc.</a></li>
+      </ul>
+    </header>
+    <div class="main-article">
+      <h3>About Me</h3>
+      <p>
+        In gestalt therapy the client and therapist work together to build awareness of the client's present experience and where they might be stuck, and to deepen the client's understanding of themselves and what they might want or need. Gestalt is relational, meaning the relationship between client and therapist forms a key part of the therapy.
+        Over the last six years I have worked on placement with clients on areas including - but not limited to - depression and anxiety, grief and loss, relationship issues, living with neurodivergence and chronic illness, disordered eating, body issues, identity and sexuality. 
+        I aim to create a safe space for the client to explore whatever they might be struggling with, and to experiment with what else might be possible. With a background in education, language and communication, and an interest in movement and the body, I work creatively to support the client's clarity of how they are, and how they want to be. After my experience of living abroad, I am interested in identity, culture and the individual's experience of home and belonging.
+        I am an accredited and registered member of the UK Council for Psychotherapy (UKCP) and adhere to their code of ethics.
+      </p>
+    </div>
+    <footer-component></footer-component>
+  </body>
+</html>

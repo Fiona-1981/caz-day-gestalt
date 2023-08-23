@@ -1,15 +1,39 @@
 /* CSS goes here! */
 
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 .main-article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
 }
 
+header {
+  text-align: center;
+}
+
+.no-hover:hover {
+  opacity: 1;
+}
+
+ul.menu {
+  list-style: none;
+  text-align: left;
+}
+
+li.menu-item {
+  display: inline-block;
+  padding-right: 10px;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: white;
+  padding: 10px;
 }
 
 figure {
@@ -28,6 +52,8 @@ figure img {
 figcaption {
   text-align: center;
   width: 180px;
+  color: black;
+  height: 35px;
 }
 
 a {

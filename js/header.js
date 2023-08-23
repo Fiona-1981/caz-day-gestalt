@@ -51,13 +51,13 @@ class Header extends HTMLElement {
             </div>
           </blockquote>
           <a href="mailto:cdaygestalttherapy@gmail.com">email: cdaygestalttherapy@gmail.com</a>
-        </p>
-        <a class="no-hover" href="index.html">
+          </p>
+        <a class="no-hover" href="../index.html">
         <img src="../images/caz-logo-2.png" alt="Caz's logo">
         <h2>Caz Day Gestalt Therapy</h2>
         </a>
         <ul class="menu">
-          <li class="menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="../index.html">Home</a></li>
           <li class="menu-item"><a href="gallery.html">Gallery</a></li>
           <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
           <li class="menu-item"><a href="articles.html">Articles, Books and Blogs</a></li>
