@@ -28,10 +28,9 @@ class Header extends HTMLElement {
       </style>
 
       <header>
-        <p>
-          <blockquote>
-            <div style="padding:16px;">
-              <a href="https://www.instagram.com/caz_day_gestalt_therapy/?utm_source=ig_embed&amp;utm_campaign=loading" 
+        <blockquote>
+          <div style="padding:16px;">
+            <a href="https://www.instagram.com/caz_day_gestalt_therapy/?utm_source=ig_embed&amp;utm_campaign=loading" 
               style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; 
               width:100%;" target="_blank">
                 <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
@@ -48,13 +47,12 @@ class Header extends HTMLElement {
                   </svg>
                 </div>
               </a>
-            </div>
-          </blockquote>
-          <a href="mailto:cdaygestalttherapy@gmail.com">email: cdaygestalttherapy@gmail.com</a>
-          </p>
+          </div>
+        </blockquote>
+        <p><a class="menu-item" href="mailto:cdaygestalttherapy@gmail.com">email: cdaygestalttherapy@gmail.com</a></p>
         <a class="no-hover" href="../index.html">
-        <img src="../images/caz-logo-2.png" alt="Caz's logo">
-        <h2>Caz Day Gestalt Therapy</h2>
+          <img src="../images/caz-logo-2.png" alt="Caz's logo">
+          <h2>Caz Day Gestalt Therapy</h2>
         </a>
         <ul class="menu">
           <li class="menu-item"><a href="../index.html">Home</a></li>
