@@ -36,6 +36,7 @@ class Footer extends HTMLElement {
           </div>
         </blockquote> 
         <script async src="//www.instagram.com/embed.js"></script>
+        <a href="https://www.psychotherapy.org.uk" target="_blank"><p><img src="../images/ukcp-logo.png" alt="UKCP Logo"></p></a>
         <p><a href="mailto:hello@handmadebywiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
       </footer>
     `;
