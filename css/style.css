@@ -12,11 +12,23 @@ body {
 
 .main-article-index {
   max-width: 1000px;
-  min-height: 700px;
+  min-height: 750px;
   margin: 0 auto;
   padding: 40px;
-  background-image: url("../images/mountain.jpg");
+  background-image: url("../images/mountain-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 400px) {
+  .main-article-index {
+    max-width: 1000px;
+    min-height: 750px;
+    margin: 0 auto;
+    padding: 40px;
+    background-image: url("../images/mountain.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 header {
