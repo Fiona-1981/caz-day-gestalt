@@ -52,7 +52,7 @@ class Header extends HTMLElement {
         <p><a class="menu-item" href="mailto:cdaygestalttherapy@gmail.com">email: cdaygestalttherapy@gmail.com</a></p>
         <a class="no-hover" href="../index.html">
           <img src="../images/caz-logo-2.png" alt="Caz's logo">
-          <h2>Caz Day Gestalt Therapy</h2>
+          <h2>CAZ DAY GESTALT THERAPY</h2>
         </a>
         <ul class="menu">
           <li class="menu-item"><a href="../index.html">Home</a></li>
