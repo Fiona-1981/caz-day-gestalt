@@ -58,6 +58,7 @@ ul.menu {
   .menu a.icon {
     float: right;
     display: block;
+    font-size: 30px;
   }
 }
 
