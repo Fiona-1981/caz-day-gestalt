@@ -67,6 +67,8 @@ ul.menu {
     position: absolute;
     right: 0;
     top: 0;
+    transform: rotate(-90deg);
+    transition: ease-in 0.3s;
   }
 
   .menu.responsive a {
