@@ -65,7 +65,6 @@ class Header extends HTMLElement {
         </a>
         <ul class="menu" id="myTopnav">
           <li class="menu-item"><a href="../index.html">Home</a></li>
-          <li class="menu-item"><a href="gallery.html">Gallery</a></li>
           <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
           <li class="menu-item"><a href="articles.html">Articles, Books and Blogs</a></li>
           <li class="menu-item"><a href="appointments.html">Appointments, Fees, Location etc.</a></li>
