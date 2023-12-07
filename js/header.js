@@ -18,7 +18,7 @@ class Header extends HTMLElement {
 
         ul.menu {
           list-style: none;
-          text-align: left;
+          text-align: center;
         }
 
         .menu .icon {
