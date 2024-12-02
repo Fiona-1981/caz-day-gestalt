@@ -59,12 +59,12 @@ class Header extends HTMLElement {
       <header>
         
         
-        <a class="no-hover" href="../index.html">
+        <a class="no-hover" href="./index.html">
           <img src="../images/caz-logo-2.png" alt="Caz's logo">
           <h2>CAZ DAY THERAPY</h2>
         </a>
         <ul class="menu" id="myTopnav">
-          <li class="menu-item"><a href="../index.html">Home</a></li>
+          <li class="menu-item"><a href="index.html">Home</a></li>
           <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
           <li class="menu-item"><a href="articles.html">Articles, Books and Blogs</a></li>
           <li class="menu-item"><a href="appointments.html">Appointments, Fees, Location etc.</a></li>
