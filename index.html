@@ -2,34 +2,20 @@
 <html lang="en">
   <head>
     <title>Caz Day Therapy</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='../css/style.css'>
-    <script src="../js/header.js" type="text/javascript" defer></script>
-    <script src="../js/footer.js" type="text/javascript" defer></script>
+    <link rel='stylesheet' href='./css/style.css'>
+    <script src="./js/header.js" type="text/javascript" defer></script>
+    <script src="./js/footer.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <header>
-      <a class="no-hover" href="index.html">
-      <img src="../images/caz-logo-2.png" alt="Caz's logo">
-      <h2>CAZ DAY THERAPY</h2>
-      </a>
-      <ul class="menu" id="myTopnav" >
-        <li class="menu-item"><a href="./index.html">Home</a></li>
-        <li class="menu-item"><a href="./pages/testimonials.html">Testimonials</a></li>
-        <li class="menu-item"><a href="./pages/articles.html">Articles, Books and Blogs</a></li>
-        <li class="menu-item"><a href="./pages/appointments.html">Appointments, Fees, Location etc.</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </ul>
-    </header>
-    <div class="background-image"><img src="../images/mountain.jpg" alt="Mountain picture"></div> 
+    <header-component></header-component>
+    <div class="background-image"><img src="./images/mountain.jpg" alt="Mountain picture"></div> 
     <div class="main-article-index">
       <h3>About Me</h3>
-      <img src="../images/caz-portrait.jpg" alt="Caz Day" style="float: right; height: 200px; border-radius: 5px;">
+      <img src="./images/caz-portrait.jpg" alt="Caz Day" style="float: right; height: 200px; border-radius: 5px;">
       <p>
         In gestalt therapy the client and therapist work together to build awareness of the client's 
         present experience and where they might be stuck, and to deepen the client's understanding of 
@@ -55,16 +41,6 @@
         to their code of ethics.
       
     </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "menu") {
-          x.className += " responsive";
-        } else {
-          x.className = "menu";
-        }
-      }
-      </script>
     <footer-component></footer-component>
   </body>
 </html>
