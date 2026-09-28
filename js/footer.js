@@ -1,10 +1,4 @@
 class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-// Remember the CSS in here overrides the CSS in the Header file!
-
   connectedCallback() {
     this.innerHTML = `
       <style>
@@ -16,12 +10,11 @@ class Footer extends HTMLElement {
       <footer>
         <blockquote>
           <div style="padding:16px;">
-            <a href="https://www.instagram.com/caz_day_gestalt_therapy/?utm_source=ig_embed&amp;utm_campaign=loading" 
+            <a href="https://www.instagram.com/caz_day_gestalt_therapy/" 
               style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; 
-              width:100%;" target="_blank">
+              width:100%;" target="_blank" rel="noopener">
               <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" 
-                xmlns:xlink="https://www.w3.org/1999/xlink">
+                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-511.000000, -20.000000)" 
                     fill="#000000">
@@ -35,8 +28,7 @@ class Footer extends HTMLElement {
             </a>
           </div>
         </blockquote> 
-        <script async src="//www.instagram.com/embed.js"></script>
-        <a href="https://www.psychotherapy.org.uk" target="_blank"><p><img src="../images/ukcp-logo.png" alt="UKCP Logo"></p></a>
+        <a href="https://www.psychotherapy.org.uk" target="_blank" rel="noopener"><p><img src="/images/ukcp-logo.png" alt="UKCP Logo"></p></a>
         <p><a href="mailto:hello@handmadebywiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
       </footer>
     `;
