@@ -11,9 +11,11 @@ class Header extends HTMLElement {
           <li class="menu-item"><a href="/pages/testimonials.html">Testimonials</a></li>
           <li class="menu-item"><a href="/pages/articles.html">Articles, Books and Blogs</a></li>
           <li class="menu-item"><a href="/pages/appointments.html">Appointments, Fees, Location etc.</a></li>
-          <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-          </a>
+          <li class="menu-icon">
+            <a href="javascript:void(0);" class="icon" aria-label="Menu">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
         </ul>
       </header>
     `;

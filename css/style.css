@@ -77,6 +77,10 @@ li.menu-item {
   padding-right: 10px;
 }
 
+li.menu-icon {
+  display: inline;
+}
+
 .background-image {
   height: 350px;
   overflow: hidden;
