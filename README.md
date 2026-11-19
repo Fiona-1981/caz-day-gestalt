@@ -8,32 +8,38 @@ It's a plain static site: HTML, CSS and a little JavaScript, with no build step.
 
 ## Structure
 
-- `index.html` – home page (About Me)
-- `pages/` – Testimonials, Articles/Books/Blogs, Appointments
-- `js/header.js`, `js/footer.js` – shared header and footer, used on every page
-  as `<header-component>` and `<footer-component>`
-- `css/style.css` – all styles
-- `images/` – logo, photos, favicon
+Everything the browser needs is in `public/`. Files at the repo root (this
+README, `.gitignore`, `.vscode/`) are for development only and aren't deployed.
 
-The header and footer use root-relative links (`/pages/...`), so the site must
-be served from the root of a domain, not from a subfolder or opened as a file.
+- `public/index.html` – home page (About Me)
+- `public/pages/` – Testimonials, Articles/Books/Blogs, Appointments
+- `public/js/header.js`, `public/js/footer.js` – shared header and footer, used
+  on every page as `<header-component>` and `<footer-component>`
+- `public/css/style.css` – all styles
+- `public/images/` – logo, photos, favicon
+
+The header and footer use root-relative links (`/pages/...`), so `public/` must
+be served as the root of a domain, not from a subfolder or opened as a file.
 
 ## Running locally
 
-From the project folder:
+From the `public/` folder:
 
 ```
+cd public
 python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000/index.html. VS Code's Live Server (port 5502)
-also works if this folder is opened as the workspace root.
+also works if `"liveServer.settings.root": "/public"` is set in
+`.vscode/settings.json`.
 
 ## Deploying
 
-The site is hosted on cPanel. Upload changed files to `public_html` with the
-File Manager, keeping the same folder structure. The header, footer and pages
-depend on each other, so upload them together.
+The site is hosted on cPanel. Upload the *contents* of `public/` (not the
+`public` folder itself) to `public_html` with the File Manager, keeping the same
+folder structure. The header, footer and pages depend on each other, so upload
+them together.
 
 The server's `.htaccess` isn't in this repo. It redirects http and www to
 https://cazdaytherapy.com, and has a cPanel-generated PHP block that shouldn't
