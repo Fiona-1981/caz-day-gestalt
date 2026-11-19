@@ -29,7 +29,7 @@ class Footer extends HTMLElement {
           </div>
         </blockquote> 
         <a href="https://www.psychotherapy.org.uk" target="_blank" rel="noopener"><p><img src="/images/ukcp-logo.png" alt="UKCP Logo"></p></a>
-        <p><a href="mailto:hello@handmadebywiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
+        <p><a href="mailto:fiona@fionawiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
       </footer>
     `;
   }
