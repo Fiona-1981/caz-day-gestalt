@@ -27,6 +27,14 @@ footer {
   text-align: center;
 }
 
+/* Contain the floated menu button on phones, so it doesn't push into the
+   hero image below and squeeze it narrower */
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* Headings use the correct levels for screen readers, but are sized to match
    the original design (site name looked like an h2, page titles like an h3) */
 .site-name {
