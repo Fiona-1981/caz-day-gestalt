@@ -174,6 +174,7 @@ main a {
 
 .portrait {
   float: right;
+  width: auto; /* scale from height, not the width attribute */
   height: 200px;
   border-radius: 5px;
 }
