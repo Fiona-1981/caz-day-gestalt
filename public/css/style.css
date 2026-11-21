@@ -35,6 +35,43 @@ footer {
   text-align: center;
 }
 
+/* Headings use the correct levels for screen readers, but are sized to match
+   the original design (site name looked like an h2, page titles like an h3) */
+.site-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+h1 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* Section headings that look like the plain text around them */
+.subheading {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 1em 0 0;
+}
+
+.subheading + p {
+  margin-top: 0;
+}
+
+/* Hidden on screen but still read by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .no-hover:hover {
   opacity: 1;
 }
