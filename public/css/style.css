@@ -22,10 +22,7 @@ body {
   }
 }
 
-header {
-  text-align: center;
-}
-
+header,
 footer {
   text-align: center;
 }
@@ -71,7 +68,7 @@ h1 {
   opacity: 1;
 }
 
-ul.menu {
+.menu {
   list-style: none;
   text-align: center;
 }
@@ -124,12 +121,12 @@ ul.menu {
   }
 }
 
-li.menu-item {
+.menu-item {
   display: inline-block;
   padding-right: 10px;
 }
 
-li.menu-icon {
+.menu-icon {
   display: inline;
 }
 
