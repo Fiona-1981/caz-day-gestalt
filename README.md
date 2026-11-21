@@ -71,7 +71,9 @@ be edited. Download a copy before changing it.
 
 ## Privacy
 
-The site sets no cookies and loads no analytics. The only third-party request
-is the Font Awesome 4.7 stylesheet from cdnjs, used for the mobile menu icon.
-Maps are plain links to Google Maps rather than embeds, so nothing loads from
-Google until a visitor clicks. Please keep it that way, or add a consent step.
+The site sets no cookies, loads no analytics and makes no third-party requests:
+everything is served from the site itself. The mobile menu icon is an inline
+SVG (Font Awesome 4.7's "bars" icon, SIL OFL 1.1) rather than an icon font from
+a CDN. Maps are plain links to Google Maps rather than embeds, so nothing loads
+from Google until a visitor clicks. Please keep it that way, or add a consent
+step.

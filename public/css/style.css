@@ -97,6 +97,16 @@ h1 {
   opacity: 0.6;
 }
 
+/* Menu icon: Font Awesome 4.7's "bars" icon (SIL OFL 1.1) as inline SVG,
+   sized and aligned exactly as the icon font drew it */
+.menu .icon svg {
+  display: inline-block;
+  width: 0.857143em;          /* glyph width 1536 / 1792 units */
+  height: 1em;
+  vertical-align: -0.133333em; /* where the icon font's baseline landed (4px at 30px) */
+  fill: currentColor;
+}
+
 /* Phones: hide the menu links behind the menu button */
 @media screen and (max-width: 600px) {
   .menu a {
