@@ -6,17 +6,19 @@ class Header extends HTMLElement {
           <img src="/images/caz-logo-2.png" alt="">
           <h2>CAZ DAY THERAPY</h2>
         </a>
-        <ul class="menu" id="myTopnav">
-          <li class="menu-item"><a href="/index.html">Home</a></li>
-          <li class="menu-item"><a href="/pages/testimonials.html">Testimonials</a></li>
-          <li class="menu-item"><a href="/pages/articles.html">Articles, Books and Blogs</a></li>
-          <li class="menu-item"><a href="/pages/appointments.html">Appointments, Fees, Location etc.</a></li>
-          <li class="menu-icon">
-            <button type="button" class="icon" aria-label="Menu" aria-expanded="false" aria-controls="myTopnav">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-          </li>
-        </ul>
+        <nav>
+          <ul class="menu" id="myTopnav">
+            <li class="menu-item"><a href="/index.html">Home</a></li>
+            <li class="menu-item"><a href="/pages/testimonials.html">Testimonials</a></li>
+            <li class="menu-item"><a href="/pages/articles.html">Articles, Books and Blogs</a></li>
+            <li class="menu-item"><a href="/pages/appointments.html">Appointments, Fees, Location etc.</a></li>
+            <li class="menu-icon">
+              <button type="button" class="icon" aria-label="Menu" aria-expanded="false" aria-controls="myTopnav">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </header>
     `;
 
