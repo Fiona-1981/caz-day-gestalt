@@ -31,6 +31,10 @@ header {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+}
+
 .no-hover:hover {
   opacity: 1;
 }

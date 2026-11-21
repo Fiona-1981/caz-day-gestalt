@@ -13,13 +13,34 @@ README, `.gitignore`, `.vscode/`) are for development only and aren't deployed.
 
 - `public/index.html` – home page (About Me)
 - `public/pages/` – Testimonials, Articles/Books/Blogs, Appointments
-- `public/js/header.js`, `public/js/footer.js` – shared header and footer, used
-  on every page as `<header-component>` and `<footer-component>`
+- `public/js/menu.js` – opens and closes the mobile menu
 - `public/css/style.css` – all styles
 - `public/images/` – logo, photos, favicon
 
 The header and footer use root-relative links (`/pages/...`), so `public/` must
 be served as the root of a domain, not from a subfolder or opened as a file.
+
+## Why the header and footer are copied into every page
+
+The header and footer HTML is written out in full in each of the four pages.
+**If you change either one, make the same change in all four pages.**
+
+They used to be injected by JavaScript as custom elements, so they were written
+only once. That meant visitors got no navigation if JavaScript failed, and the
+page jumped as the header appeared. The other options considered were:
+
+- **A static site generator such as Astro or Eleventy.** These let you write the
+  header and footer once and copy them into each page when the site is built.
+  But they need Node.js, a build step before every deploy, and ongoing
+  dependency updates.
+- **Copying the header and footer into each page (chosen).** The site is four
+  pages and rarely changes, so editing four files on the odd occasion the menu
+  changes is a small cost. In return the site stays plain HTML and CSS with no
+  tools, no build step and almost no JavaScript, and `public/` can be uploaded
+  exactly as it is.
+
+If the site grows, for example with regular blog posts, it's worth revisiting
+a static site generator.
 
 ## Running locally
 
@@ -38,8 +59,8 @@ also works if `"liveServer.settings.root": "/public"` is set in
 
 The site is hosted on cPanel. Upload the *contents* of `public/` (not the
 `public` folder itself) to `public_html` with the File Manager, keeping the same
-folder structure. The header, footer and pages depend on each other, so upload
-them together.
+folder structure. The pages, `style.css` and `menu.js` depend on each other, so
+upload any changed ones together.
 
 The server's `.htaccess` isn't in this repo. It redirects http and www to
 https://cazdaytherapy.com, and has a cPanel-generated PHP block that shouldn't
