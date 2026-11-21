@@ -1,7 +1,7 @@
 # Caz Day Therapy
 
 Website for Caz Day, a UKCP-registered Gestalt therapist, live at
-https://cazdaytherapy.com. It started as a voluntary project, built from my
+https://cazdaytherapy.com. It is a voluntary project, built from my
 hand-made-by-wiggins boilerplate.
 
 It's a plain static site: HTML, CSS and a little JavaScript, with no build step.
