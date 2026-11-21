@@ -119,9 +119,11 @@ h1 {
     font-size: 30px;
   }
 
-  /* Menu open */
+  /* Menu open. The right padding matches the list's default 40px left
+     indent, keeping the links clear of the menu button and centred */
   .menu.responsive {
     position: relative;
+    padding-right: 40px;
   }
 
   .menu.responsive .icon {
