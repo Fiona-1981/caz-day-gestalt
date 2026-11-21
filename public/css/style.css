@@ -172,6 +172,18 @@ main a {
   text-decoration: underline;
 }
 
+/* A list that looks like plain lines starting with "- " */
+.dash-list {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dash-list li::before {
+  content: "- ";
+  content: "- " / ""; /* the dash is decoration: screen readers skip it */
+}
+
 .portrait {
   float: right;
   width: auto; /* scale from height, not the width attribute */
