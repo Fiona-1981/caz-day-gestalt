@@ -3,27 +3,22 @@ body {
   font-weight: 300;
 }
 
-.main-article {
+/* Page content area (.main-article-index is the home page) */
+.main-article,
+.main-article-index {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px;
 }
 
-/* Mobile screen */
+/* The home page has a minimum height: taller on screens under 450px wide */
 .main-article-index {
-  max-width: 1000px;
   min-height: 750px;
-  margin: 0 auto;
-  padding: 40px;
 }
 
-/* Computer screen */
-@media only screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
   .main-article-index {
-    max-width: 900px;
     min-height: 500px;
-    margin: 0 auto;
-    padding: 40px;
   }
 }
 
@@ -97,19 +92,23 @@ ul.menu {
   opacity: 0.6;
 }
 
+/* Phones: hide the menu links behind the menu button */
 @media screen and (max-width: 600px) {
   .menu a {
     display: none;
   }
+
   .menu .icon {
     float: right;
     display: block;
     font-size: 30px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .menu.responsive {position: relative;}
+  /* Menu open */
+  .menu.responsive {
+    position: relative;
+  }
+
   .menu.responsive .icon {
     position: absolute;
     right: 0;
