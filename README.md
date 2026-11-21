@@ -23,7 +23,10 @@ be served as the root of a domain, not from a subfolder or opened as a file.
 ## Why the header and footer are copied into every page
 
 The header and footer HTML is written out in full in each of the four pages.
-**If you change either one, make the same change in all four pages.**
+**If you change either one, make the same change in all four pages.** The
+headers are identical except for one thing: each page's own menu link has
+`aria-current="page"`, so screen readers announce it as the current page. Keep
+that on the right link if you copy a header from one page to another.
 
 They used to be injected by JavaScript as custom elements, so they were written
 only once. That meant visitors got no navigation if JavaScript failed, and the
