@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <header>
         <a class="no-hover" href="/index.html">
-          <img src="/images/caz-logo-2.png" alt="Caz's logo">
+          <img src="/images/caz-logo-2.png" alt="">
           <h2>CAZ DAY THERAPY</h2>
         </a>
         <ul class="menu" id="myTopnav">

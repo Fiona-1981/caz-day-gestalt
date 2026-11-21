@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
             </a>
           </div>
         </blockquote> 
-        <a href="https://www.psychotherapy.org.uk" target="_blank" rel="noopener"><p><img src="/images/ukcp-logo.png" alt="UKCP Logo"></p></a>
+        <a href="https://www.psychotherapy.org.uk" target="_blank" rel="noopener"><p><img src="/images/ukcp-logo.png" alt="UKCP – UK Council for Psychotherapy"></p></a>
         <p><a href="mailto:fiona@fionawiggins.co.uk">Website hand made by Fiona Wiggins</a></p>
       </footer>
     `;
