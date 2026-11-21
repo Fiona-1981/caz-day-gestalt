@@ -12,9 +12,9 @@ class Header extends HTMLElement {
           <li class="menu-item"><a href="/pages/articles.html">Articles, Books and Blogs</a></li>
           <li class="menu-item"><a href="/pages/appointments.html">Appointments, Fees, Location etc.</a></li>
           <li class="menu-icon">
-            <a href="javascript:void(0);" class="icon" aria-label="Menu">
-              <i class="fa fa-bars"></i>
-            </a>
+            <button type="button" class="icon" aria-label="Menu" aria-expanded="false" aria-controls="myTopnav">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
           </li>
         </ul>
       </header>
@@ -22,8 +22,10 @@ class Header extends HTMLElement {
 
     // Toggle the mobile menu
     const menu = this.querySelector('#myTopnav');
-    this.querySelector('.icon').addEventListener('click', () => {
-      menu.classList.toggle('responsive');
+    const button = this.querySelector('.icon');
+    button.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('responsive');
+      button.setAttribute('aria-expanded', isOpen);
     });
   }
 }

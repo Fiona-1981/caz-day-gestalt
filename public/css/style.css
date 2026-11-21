@@ -42,13 +42,25 @@ ul.menu {
 
 .menu .icon {
   display: none;
+  /* Remove the browser's button styling so it looks like the old link */
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.menu .icon:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 600px) {
   .menu a {
     display: none;
   }
-  .menu a.icon {
+  .menu .icon {
     float: right;
     display: block;
     font-size: 30px;
@@ -57,7 +69,7 @@ ul.menu {
 
 @media screen and (max-width: 600px) {
   .menu.responsive {position: relative;}
-  .menu.responsive a.icon {
+  .menu.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
