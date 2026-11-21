@@ -12,9 +12,9 @@ class Footer extends HTMLElement {
           <div style="padding:16px;">
             <a href="https://www.instagram.com/caz_day_gestalt_therapy/" 
               style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; 
-              width:100%;" target="_blank" rel="noopener">
+              width:100%;" target="_blank" rel="noopener" aria-label="Caz Day Gestalt Therapy on Instagram">
               <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-511.000000, -20.000000)" 
                     fill="#000000">
