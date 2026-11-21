@@ -111,13 +111,21 @@ h1 {
     right: 0;
     top: 0;
     transform: rotate(-90deg);
-    transition: ease-in 0.3s;
+    transition: transform 0.3s ease-in;
   }
 
   .menu.responsive a {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+/* Don't animate the menu button for visitors who have turned on their
+   device's reduce motion setting */
+@media (prefers-reduced-motion: reduce) {
+  .menu.responsive .icon {
+    transition: none;
   }
 }
 
