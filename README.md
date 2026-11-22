@@ -67,10 +67,7 @@ also works if `"liveServer.settings.root": "/public"` is set in
 
 ## Deploying
 
-The site is hosted on cPanel. Upload the *contents* of `public/` (not the
-`public` folder itself) to `public_html` with the File Manager, keeping the same
-folder structure. The pages, `style.css` and `menu.js` depend on each other, so
-upload any changed ones together.
+The site is hosted on Cloudflare. Upload  `public/` as a whole.
 
 The server's `.htaccess` isn't in this repo. It redirects http and www to
 https://cazdaytherapy.com, and has a cPanel-generated PHP block that shouldn't
