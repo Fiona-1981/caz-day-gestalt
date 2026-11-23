@@ -9,7 +9,7 @@ It's a plain static site: HTML, CSS and a little JavaScript, with no build step.
 ## Structure
 
 Everything the browser needs is in `public/`. Files at the repo root (this
-README, `.gitignore`, `.vscode/`) are for development only and aren't deployed.
+README and `.gitignore`) are for development only and aren't deployed.
 
 - `public/index.html` – home page (About Me)
 - `public/pages/` – Testimonials, Articles/Books/Blogs, Appointments
@@ -61,9 +61,10 @@ cd public
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000/index.html. VS Code's Live Server (port 5502)
-also works if `"liveServer.settings.root": "/public"` is set in
-`.vscode/settings.json`.
+Then open http://localhost:8000/. Serve from inside `public/` so it's the site
+root, as it is on Cloudflare; otherwise the menu and footer links break. The
+server doesn't reload pages automatically, so refresh the browser after saving
+a change.
 
 ## Deploying
 
