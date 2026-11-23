@@ -45,16 +45,16 @@ page jumped as the header appeared. The other options considered were:
   dependency updates.
 - **Copying the header and footer into each page (chosen).** The site is four
   pages and rarely changes, so editing a handful of files on the odd occasion
-  the menu changes is a small cost. In return the site stays plain HTML and CSS with no
-  tools, no build step and almost no JavaScript, and `public/` can be uploaded
-  exactly as it is.
+  the menu changes is a small cost. In return the site stays plain HTML and
+  CSS with no tools, no build step and almost no JavaScript, and `public/` can
+  be uploaded exactly as it is.
 
 If the site grows, for example with regular blog posts, it's worth revisiting
 a static site generator.
 
 ## Running locally
 
-From the `public/` folder:
+From the repo root:
 
 ```
 cd public
@@ -67,17 +67,25 @@ also works if `"liveServer.settings.root": "/public"` is set in
 
 ## Deploying
 
-The site is hosted on Cloudflare. Upload  `public/` as a whole.
+The site is a static Cloudflare Workers site. To deploy, upload the `public/`
+folder in the Cloudflare dashboard. Its contents become the root of the site,
+so `public/index.html` is served at https://cazdaytherapy.com/.
 
-The server's `.htaccess` isn't in this repo. It redirects http and www to
-https://cazdaytherapy.com, and has a cPanel-generated PHP block that shouldn't
-be edited. Download a copy before changing it.
+`404.html` is served, with a 404 status, for any address that doesn't exist.
+This relies on the Worker's `not_found_handling` setting being `"404-page"`. If
+unknown addresses ever show a blank page or the home page instead, check that
+setting.
 
-On cPanel, unknown addresses show the server's own error page unless
-`.htaccess` contains `ErrorDocument 404 /404.html`. On Cloudflare Pages,
-`404.html` is used automatically. Without it, Pages would serve the home page
-for every unknown address. On Cloudflare Workers, set
-`not_found_handling = "404-page"` for it to be used.
+### Domain
+
+- `cazdaytherapy.com` is **registered at Pilchard**, with its nameservers
+  pointing to Cloudflare. Keep the registration renewed there, or the site will
+  go offline.
+- DNS is managed in Cloudflare. The main address is connected to the Worker as
+  a custom domain.
+- `www` redirects to the main address with a Cloudflare redirect rule (the `www`
+  DNS record must stay proxied, orange cloud), and "Always Use HTTPS" sends
+  `http://` visits to `https://`.
 
 ## Privacy
 
